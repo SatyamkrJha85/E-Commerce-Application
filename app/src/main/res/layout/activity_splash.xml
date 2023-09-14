@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Splash_Activity">
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="291dp"
+        android:src="@drawable/ecom_splash" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome TO Your Shop"
+        android:textSize="27sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By Satyam Jha"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

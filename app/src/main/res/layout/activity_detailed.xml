@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailedActivity">
+
+
+
+    <ImageView
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/detailed_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detailed_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Product Detailed" />
+    <androidx.cardview.widget.CardView
+        android:translationY="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/cardview"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailed_img">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@font/amethystrya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailed_name"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Product Name"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/rating"
+                    android:fontFamily="@font/amethystrya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.6"
+                    android:textColor="@color/black"
+                    android:layout_toStartOf="@+id/my_rating"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_rating"
+                    android:layout_marginTop="10dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:fontFamily="@font/amethystrya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailed_desc"
+                android:text="n have a wide selection of chinos, jeans, shorts, and more. So, depending on
+                 your preferred style you are definitely going to find something that will find
+                 its worthy place in your wardrobe. Some of the bottom wear for women that you can shop
+                  for include shorts, plaited skirts, pencil skirts, ripped jeans, and cargo pants. Some of
+                   the bottomwear for men that you shoul"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textSize="21sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amethystrya"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amethystrya"/>
+                <TextView
+                    android:id="@+id/detailed_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amethystrya"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/addpng"
+                    android:id="@+id/add_item"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quantity"
+                    android:text="2"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/removepng"
+                    android:id="@+id/remove_item"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_marginBottom="70dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_to_cart"
+        android:text="Add To Cart"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_bg2"
+        android:drawableLeft="@drawable/my_cart"
+        android:drawablePadding="5dp"
+        android:drawableTint="@android:color/holo_blue_bright"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        app:layout_constraintWidth_percent=".8"
+        android:padding="14dp"
+        />
+
+    <Button
+        android:background="@drawable/edit_text_bg2"
+        android:backgroundTint="@color/pink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buy_now"
+        android:text="Buy Now"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/my_cart"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        android:padding="14dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

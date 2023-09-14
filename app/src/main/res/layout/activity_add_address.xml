@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddAddressActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_address_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FF7FD"
+        app:title="Add Address"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Create Address"
+        android:textSize="24sp"
+ />
+
+
+
+        <EditText
+            android:id="@+id/ad_name"
+            android:hint="Enter Your Name"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_bg2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+
+        <EditText
+            android:hint="Enter Your Address"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_bg2"
+            android:id="@+id/ad_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+
+        <EditText
+            android:hint="Enter Your City"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_bg2"
+            android:id="@+id/ad_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:hint="Enter Your Area Code"
+            android:background="@drawable/edit_text_bg2"
+            android:id="@+id/ad_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+
+        <EditText
+            android:hint="Enter Your Number"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_bg2"
+            android:id="@+id/ad_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:background="@drawable/edit_text_bg2"
+        android:id="@+id/ad_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+
+        android:text="Add Address"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>
